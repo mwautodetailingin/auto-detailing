@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MW Auto Detailing | Goshen, IN</title>
+  <meta name="description" content="MW Auto Detailing in Goshen, Indiana. Interior and exterior detailing, paint enhancement, and ceramic protection." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar" id="home">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#home" aria-label="MW Auto Detailing home">
+        <span class="brand-mark">MW</span>
+        <span class="brand-name">MW Auto Detailing</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#packages">Packages</a>
+        <a href="services.html">Details Page</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="btn btn-sm" href="#booking">Book Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Serving Goshen, Indiana</p>
+          <h1>MW Auto Detailing</h1>
+          <p class="lead">Professional interior and exterior detailing for daily drivers, trucks, and family vehicles. We bring showroom-level finish back to your ride.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#booking">Request a Quote</a>
+            <a class="btn btn-ghost" href="services.html">See Full Services</a>
+          </div>
+          <ul class="hero-points">
+            <li>Local service area: Goshen</li>
+            <li>Fast quote response</li>
+            <li>Careful, paint-safe process</li>
+          </ul>
+        </div>
+        <aside class="hero-card" aria-label="Contact details">
+          <h2>Call or Text</h2>
+          <p class="slot">1 574 374 2054</p>
+          <p class="small">Tap the form below and we will prefill an SMS request directly to this number.</p>
+          <a class="btn" href="tel:+15743742054">Call Now</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <p class="eyebrow">Core Services</p>
+        <h2>Built for Clean, Protection, and Shine</h2>
+        <div class="card-grid">
+          <article class="card reveal">
+            <h3>Interior Detail</h3>
+            <p>Deep vacuum, wipe-down, stain treatment, and trim refresh for a crisp interior reset.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Exterior Detail</h3>
+            <p>Safe wash, decontamination, wheel cleaning, and gloss restoration for curb appeal.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Paint Protection</h3>
+            <p>Sealant and ceramic options that repel grime, reduce water spotting, and protect finish.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages" id="packages">
+      <div class="container">
+        <p class="eyebrow">Package Options</p>
+        <h2>Choose the Level You Need</h2>
+        <div class="price-grid">
+          <article class="price-card reveal">
+            <h3>Quick Clean</h3>
+            <p class="price">$119</p>
+            <ul>
+              <li>Exterior wash + dry</li>
+              <li>Wheels and tires</li>
+              <li>Interior vacuum</li>
+              <li>Windows in/out</li>
+            </ul>
+          </article>
+          <article class="price-card featured reveal">
+            <span class="badge">Most Booked</span>
+            <h3>Full Detail</h3>
+            <p class="price">$229</p>
+            <ul>
+              <li>Everything in Quick Clean</li>
+              <li>Interior deep clean</li>
+              <li>Clay treatment</li>
+              <li>Paint gloss boost</li>
+            </ul>
+          </article>
+          <article class="price-card reveal">
+            <h3>Premium Shield</h3>
+            <p class="price">$399</p>
+            <ul>
+              <li>Everything in Full Detail</li>
+              <li>Paint correction step</li>
+              <li>Durable sealant</li>
+              <li>Trim restoration</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Local and Trusted</p>
+          <h2>Detailing Service Area: Goshen</h2>
+          <p>MW Auto Detailing proudly serves Goshen and nearby neighborhoods with flexible appointment times and reliable communication.</p>
+          <div class="stats">
+            <div>
+              <p class="stat-num">Goshen</p>
+              <p class="stat-label">Primary service area</p>
+            </div>
+            <div>
+              <p class="stat-num">1 574</p>
+              <p class="stat-label">Local contact prefix</p>
+            </div>
+            <div>
+              <p class="stat-num">Same Day</p>
+              <p class="stat-label">Typical quote response</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking" id="booking" novalidate>
+          <h3>Send Quote Request</h3>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required placeholder="Your best number" />
+
+          <label for="vehicle">Vehicle</label>
+          <input id="vehicle" name="vehicle" type="text" required placeholder="Year, make, model" />
+
+          <label for="package">Requested Package</label>
+          <select id="package" name="package" required>
+            <option value="" selected disabled>Select one...</option>
+            <option>Quick Clean</option>
+            <option>Full Detail</option>
+            <option>Premium Shield</option>
+            <option>Custom Quote</option>
+          </select>
+
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Stains, pet hair, or paint concerns"></textarea>
+
+          <button class="btn" type="submit">Open SMS Request</button>
+          <p class="small">This opens your message app with a completed request to 1 574 374 2054.</p>
+          <p class="form-msg" id="formMsg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> MW Auto Detailing</p>
+      <p>Phone: <a href="tel:+15743742054">1 574 374 2054</a> | Service Area: Goshen, Indiana</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
